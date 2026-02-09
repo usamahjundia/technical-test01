@@ -120,7 +120,11 @@ if __name__ == "__main__":
     for det in output[0]:
         x, y, w, h = det
         image_draw = cv2.rectangle(image_draw, (int(x), int(y)), (int(x + w), int(y+h)), color=(0, 255, 0), thickness=1)
-    cv2.imwrite("aaa.jpg", image_draw)
+    cv2.imwrite("detection_result.jpg", image_draw)
+    # i had opencv headless, if you install normal opencv you can uncomment below to see the image isntantly
+    # cv2.imshow("detection_result", image_draw)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
         
     
         
