@@ -30,3 +30,7 @@ uv sync
 And it will install everything required. Probably not needed if run on colab.
 
 For the data, just download the data and put the `images` and `annotations` folder under `facemask_dataset`. You may or may not need to adjust the path to each folders in the code.
+
+## Analysis details and reasoning
+
+I write everything on the notebook, so you can see the explanation side by side with the code.
